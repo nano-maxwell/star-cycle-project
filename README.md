@@ -1,1 +1,1 @@
-# star-cycle-project
+This is a project I built to display information about the Star Cycle.
