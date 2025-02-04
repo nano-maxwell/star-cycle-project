@@ -10,7 +10,30 @@
     />
   </head>
   <body>
-    <div class="mainheading"><h1>Life Cycle of Stars</h1></div>
+    <div class="container mainheading">
+      <h1 style="margin-bottom: 0px">Life Cycle of Stars</h1>
+      <p
+        style="
+          font-size: medium;
+          font-family: 'Poppins';
+          font-weight: 500;
+          text-align: center;
+          margin-bottom: 10rem;
+        "
+      >
+        Maxwell, Ethan, and Mac
+      </p>
+      <p
+        style="
+          font-family: 'Poppins';
+          font-weight: 600;
+          font-size: smaller;
+          text-align: center;
+        "
+      >
+        Scroll to begin...
+      </p>
+    </div>
     <nav>Nano Maxwell</nav>
     <div class="center">
       <div class="container">
@@ -75,48 +98,203 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="image-container">
-          <img src="assets/redgiant.png" />
+      <div class="container buttons">
+        <div class="text-box-heading">
+          <p style="text-align: center">
+            Choose your <i>destiny</i>,<br />then scroll on...
+          </p>
         </div>
-        <div class="text-container">
-          <div class="text-box-heading">
-            <p>Red Giant</p>
-          </div>
-          <div class="text-box">
-            <p>
-              When a main sequence star is less than 8 times of the Sun’s mass,
-              it will start to collapse due to exhausted hydrogen.<br /><br />The
-              gravity will push against the force of fusion, but squeezing the
-              core will increase temperature and pressure. When there is a lot
-              of temperature and pressure, Helium will start to turn into
-              carbon, which releases energy. The hydrogen fusion will cause the
-              star’s outer layer to expand and turn a red giant, which can
-              appear more orange than red.
-            </p>
-          </div>
+        <div id="buttons">
+          <button class="massbuttons" onclick="showLowMassStar()">
+            Follow the humble journey<br />of a low-mass star
+          </button>
+          <button class="massbuttons" onclick="showHighMassStar()">
+            Behold the power<br />of a high-mass star
+          </button>
         </div>
       </div>
-      <div class="container">
-        <div class="image-container">
-          <img src="assets/planetarynebula.png" />
+      <div id="low-mass-star" style="display: none">
+        <div class="container">
+          <div class="image-container">
+            <img src="assets/redgiant.png" />
+          </div>
+          <div class="text-container">
+            <div class="text-box-heading">
+              <p>Red Giant</p>
+            </div>
+            <div class="text-box">
+              <p>
+                When a main sequence star is less than 8 times of the Sun’s
+                mass, it will start to collapse due to exhausted hydrogen.<br /><br />The
+                gravity will push against the force of fusion, but squeezing the
+                core will increase temperature and pressure. When there is a lot
+                of temperature and pressure, Helium will start to turn into
+                carbon, which releases energy. The hydrogen fusion will cause
+                the star’s outer layer to expand and turn a red giant, which can
+                appear more orange than red.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="text-container">
-          <div class="text-box-heading">
-            <p>Planetary Nebula</p>
+        <div class="container">
+          <div class="image-container">
+            <img src="assets/planetarynebula.png" />
           </div>
-          <div class="text-box">
-            <p>
-              As the red giant begins to die out, the star begin to contract and
-              radiate energy. The expelled gas from the radiated energy will
-              start to Ionize, creating glowing rings around the core. On the
-              outer layers, the molecules will cool and turn into metals. This
-              “dying star” phase only lasts about a thousand to ten thousand
-              years.
-            </p>
+          <div class="text-container">
+            <div class="text-box-heading">
+              <p>Planetary Nebula</p>
+            </div>
+            <div class="text-box">
+              <p>
+                The quick-lived but beautiful, mesmerizing end to a red giant.
+                <br /><br />As the star begins to die out, the star begins to
+                contract and radiate energy. The expelled gas from the radiated
+                energy will start to ionize, creating glowing rings around the
+                core. On the outer layers, the molecules will cool and turn into
+                metals. This “dying star” phase only lasts about a thousand to
+                ten thousand years.
+              </p>
+            </div>
           </div>
+        </div>
+        <div class="container">
+          <div class="image-container">
+            <img src="assets/whitedwarf.png" />
+          </div>
+          <div class="text-container">
+            <div class="text-box-heading">
+              <p>White Dwarf</p>
+            </div>
+            <div class="text-box">
+              <p>
+                The white dwarf is the beginning of the star’s final stage.<br /><br />
+                When a Red giant sheds all of its atmosphere, only the core
+                remains. A white dwarf is the size of Earth, but has more mass
+                and that a teaspoon of its material could weigh more than a pick
+                up truck. The white dwarf doesn't make any heat, and gradually
+                cools down through billions of years. Sometimes white dwarfs can
+                be found surrounded with a dusty disk of materials, debris, and
+                planets.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="image-container">
+            <img src="assets/blackdwarf.png" />
+          </div>
+          <div class="text-container">
+            <div class="text-box-heading">
+              <p>Black Dwarf</p>
+            </div>
+            <div class="text-box">
+              <p>
+                This is the final stage in a low-mass star’s life.<br /><br />
+                This happens after stars cool down and there is no more nuclear
+                fusion, and now the star doesn’t emit any light or heat. Even
+                though Black dwarfs are a theoretical concept, it doesn’t mean
+                they don’t exist, just that stars takes a long time to cool
+                down—longer than the age of the universe—so we can’t directly
+                observe them in the way we wish.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class = "container end">
+          <h1 class = "mainheading" style="height: 0px;">Thank you for viewing our site!</h1>
+          <button class = "massbuttons" onclick="goToButtons()" style=" height: 70px; font-size: large; font-weight: 600;">Choose another path</button>
         </div>
       </div>
+      <div id="high-mass-star" style="display: none">
+        <div class="container">
+          <div class="image-container">
+            <img src="assets/redsupergiant.png" />
+          </div>
+          <div class="text-container">
+            <div class="text-box-heading">
+              <p>Red Supergiant</p>
+            </div>
+            <div class="text-box">
+              <p>
+                Stars with significantly more mass will become red
+                supergiants.<br /><br />They are so large that they start to
+                fuse elements into iron, at which point it does not create
+                enough energy that it takes to form it, making it expand and
+                very quickly afterwards collapse and explode. Before they
+                explode, they release excess gas from within them, leading to
+                the increased brightness and luminosity of dying stars.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="image-container">
+            <img src="assets/supernova.png" />
+          </div>
+          <div class="text-container">
+            <div class="text-box-heading">
+              <p>Supernova</p>
+            </div>
+            <div class="text-box">
+              <p>
+                A supernova signifies the end of a red supergiant's reign.<br /><br />A
+                Red Supergiant turns into a Supernova when the force of gravity
+                is greater than the force of fusion in the core, which causes
+                the star to collapse and explode, leaving the core intact. They
+                can reach a diameter of several light-years across.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="image-container">
+            <img src="assets/neutronstar.png" />
+          </div>
+          <div class="text-container">
+            <div class="text-box-heading">
+              <p>Neutron Star</p>
+            </div>
+            <div class="text-box">
+              <p>
+                A neutron star is the remains of the stellar explosion.<br /><br />After
+                the supernova, what remains is the core, which will collapse on
+                itself, forming a superdense mass or a star with extremely high
+                gravity. Being one meter above the surface would make a human
+                accelerate 869 miles per second. In addition, neutron stars are
+                half a million solar masses, but what's even more impressive is
+                that they hold all that mass in a 12-mile diameter.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="image-container">
+            <img src="assets/blackhole.png" />
+          </div>
+          <div class="text-container">
+            <div class="text-box-heading">
+              <p>Black Hole</p>
+            </div>
+            <div class="text-box">
+              <p>
+                The black hole is most powerful object in the whole universe.<br /><br />Black
+                holes form after a supernova. Instead of being forming into giant
+                stars like neutron stars, they are formed by supergiant and
+                hypergiant stars and are very hard to see since they absorb all
+                light. Black holes form when a star explodes and dies, but is so
+                dense that all of the matter is pulled in and essentially
+                collapses into itself, creating an extremely strong gravity
+                field, from which not even light can escape.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class = "container end">
+          <h1 class = "mainheading" style="height: 0px;">Thank you for viewing our site!</h1>
+          <button class = "massbuttons" onclick="goToButtons()" style=" height: 70px; font-size: large; font-weight: 600;">Choose another path</button>
+        </div>
+      </div>
+      
     </div>
     <script src="script.js"></script>
   </body>

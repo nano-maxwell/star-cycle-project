@@ -21,4 +21,22 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(heading);
       });
   });
-  
+
+
+function showLowMassStar() {
+  document.getElementById("low-mass-star").style.display = "block";
+  document.getElementById("high-mass-star").style.display = "none";
+  document.getElementById("low-mass-star").scrollIntoView({ behavior: 'smooth' });
+}
+
+function showHighMassStar() {
+  document.getElementById("low-mass-star").style.display = "none";
+  document.getElementById("high-mass-star").style.display = "block";
+  document.getElementById("high-mass-star").scrollIntoView({ behavior: 'smooth' });
+}
+
+function goToButtons() {
+    document.getElementById("low-mass-star").style.display = "none";
+    document.getElementById("high-mass-star").style.display = "none";
+    document.getElementById("buttons").scrollIntoView({ behavior: 'smooth' });
+}
